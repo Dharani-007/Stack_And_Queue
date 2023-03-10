@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 public class StackAndQueue {
     public static void main(String[] args) {
-
-        System.out.println("Welcome to Stacks and Queues Problems using Linked List .");
+        //Welcome Message for User
+        System.out.println("Welcome to Stacks and Queues Problems using Linked List ");
 
         Scanner sc = new Scanner(System.in);
 
-        LinkedList<Integer> linkedList = new LinkedList<>();
+        LinkedList linkedList = new LinkedList();
 
         int choice;
         do {
@@ -19,26 +19,28 @@ public class StackAndQueue {
             switch (choice) {
                 case 1:
                     System.out.println("Enter the Data to Push in Stack : ");
-                    linkedList.addFirst(sc.nextInt());
+                    linkedList.insertFirst(sc.nextInt());
                     break;
                 case 2:
-                    System.out.println("Popped Element: " + linkedList.pop());
+                    linkedList.peakPop("Stack");
                     break;
                 case 3:
-                    System.out.println(linkedList.toString());
+                    linkedList.showLinkedList();
                     break;
                 case 4:
                     System.out.println("Enter the Data to Enqueue in Queue : ");
-                    linkedList.addLast(sc.nextInt());
+                    linkedList.insertLast(sc.nextInt());
                     break;
                 case 5:
-                    System.out.println("Dequeued Element: " + linkedList.removeFirst());
+                    linkedList.peakPop("Queue");
                     break;
                 case 6:
-                    System.out.println(linkedList.toString());
+                    linkedList.showLinkedList();
                     break;
             }
         }
         while(choice != 7);
     }
 }
+
+

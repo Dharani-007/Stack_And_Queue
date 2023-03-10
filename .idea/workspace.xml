@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9a2bb08-8026-48e7-b637-e5c8563a8d24" name="Changes" comment="Added : Ability to peak and pop from the Stack till it is empty 56 -&gt;30 -&gt;70">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StackAndQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
