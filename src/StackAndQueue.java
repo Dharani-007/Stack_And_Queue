@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class StackAndQueue {
     public static void main(String[] args) {
-
-        System.out.println("Welcome to Stacks and Queues Problems using Linked List developed be Tahir Mansuri.");
+        //Welcome Message for User
+        System.out.println("Welcome to Stacks and Queues Problems using Linked List .");
 
         Scanner sc = new Scanner(System.in);
 
@@ -23,6 +23,7 @@ public class StackAndQueue {
                     linkedList.add(dataFirst);
                     break;
                 case 2:
+                    System.out.println("Popped Element: " + linkedList.pop());
                     break;
                 case 3:
                     System.out.println(linkedList.toString());
@@ -34,6 +35,6 @@ public class StackAndQueue {
                 case 6:
                     break;
             }
-        } while (choice != 6);
+        }while(choice != 6);
     }
 }
